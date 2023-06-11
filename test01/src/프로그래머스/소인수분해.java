@@ -16,7 +16,7 @@ public class 소인수분해 {
 	        for (int i = 2; i <= n; i++) {
 	            while (n % i == 0) {
 	                set.add(i);
-	                n /= i;
+	                n /= i; // n을 i로 나눈 결과를 n에 다시 대입, n을 i로 나누어 떨어지지 않을 때까지 나누는 과정
 	            }
 	        }
 	        if (n != 1) set.add(n);
