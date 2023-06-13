@@ -16,11 +16,12 @@ public class 반복과정에서조건판단하기1 {
 		} while (n <= 0);
 		int sum = 0;
 
+		// 마지막 과정을 실행하기 위한 방법을 알고 있는데도 반복할 때마다 항상 조건을 판단하여 실행하는 것은 프로그램의 효율을 떨어트림
 		for (int i = 1; i <= n; i++) {
 			if (i < n) {
-				System.out.println(i + " + ");
+				System.out.print(i + " + ");
 			} else {
-				System.out.println(i + " = ");
+				System.out.print(i + " = ");
 			}
 
 			sum += i;

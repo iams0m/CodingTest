@@ -16,14 +16,18 @@ public class 반복과정에서조건판단하기2 {
 		} while (n <= 0);
 		int sum = 0;
 
+		// if가 빠진 반복문
 		for (int i = 1; i < n; i++) {
-			System.out.println(i + " + ");
+			System.out.print(i + " + ");
 			sum += i;
 		}
+
+		//System.out.println(n + " = ");
+		//sum += n;
+		//System.out.println(sum);
 		
-		System.out.println(n + " = ");
-		sum += n;
-		System.out.println(sum);
+		// 위의 세 줄을 한 줄로 나타내기
+		System.out.println(n + " = " + (sum += n));
 	}
 
 }
