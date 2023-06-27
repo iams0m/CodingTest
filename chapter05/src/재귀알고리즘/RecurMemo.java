@@ -10,14 +10,14 @@ public class RecurMemo {
 	// 메모화를 도입한 메서드 recur
 	static void recur(int n) {
 		count++;
-		if (memo[n + 1] != null) {
+		if (memo[n + 1] != null) { // 메모가 이미 되어 있는 경우
 			System.out.println(memo[n + 1]); // 메모 출력
-		} else {
+		} else { // 메모가 아직 되어 있지 않은 경우
 			if (n > 0) {
 				recur(n - 1);
 				System.out.println(n);
 				recur(n - 2);
-				memo[n + 1] = memo[n] + n + "\n" + memo[n - 1]; // 메모화
+				memo[n + 1] = memo[n] + n + "\n" + memo[n - 1]; // 출력한 내용과 동일한 문자열 메모(메모화)
 			} else {
 				memo[n + 1] = ""; // 메모화 : recur(0)과 recur(-1)은 빈 문자열
 			}
