@@ -13,26 +13,28 @@ public class 연습문제05 {
 
 	// 양방향 버블 정렬(셰이커 정렬)
 	static void shakerSort(int[] a, int n) {
-		int left = 0;
-		int right = n - 1;
-		int last = right;
+		int left = 0; // 왼쪽 경계 인덱스
+		int right = n - 1; // 오른쪽 경계 인덱스
+		int last = right; // 마지막으로 교환된 위치를 저장하는 변수
 
-		while (left < right) {
+		while (left < right) { // 왼쪽 경계와 오른쪽 경계가 만나지 않을 때까지 반복
 			for (int j = right; j > left; j--) {
+				// 배열의 뒤쪽부터 앞쪽으로 탐색하며 인접한 요소를 비교하여 정렬
 				if (a[j - 1] > a[j]) {
-					swap(a, j - 1, j);
-					last = j;
+					swap(a, j - 1, j); // 인접한 요소를 교환
+					last = j; // 마지막으로 교환된 위치를 저장
 				}
 			}
-			left = last;
+			left = last; // 마지막으로 교환된 위치를 왼쪽 경계로 설정
 
 			for (int j = left; j < right; j++) {
+				// 배열의 앞쪽부터 뒤쪽으로 탐색하며 인접한 요소를 비교하여 정렬
 				if (a[j] > a[j + 1]) {
-					swap(a, j, j + 1);
-					last = j;
+					swap(a, j, j + 1); // 인접한 요소를 교환
+					last = j; // 마지막으로 교환된 위치를 저장
 				}
 			}
-			right = last;
+			right = last; // 마지막으로 교환된 위치를 오른쪽 경계로 설정
 		}
 	}
 
