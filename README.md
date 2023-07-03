@@ -5,4 +5,5 @@
 - **Chapter 03** [검색 알고리즘](https://github.com/iams0m/CodingTest/tree/main/chapter03)
 - **Chapter 04** [스택과 큐](https://github.com/iams0m/CodingTest/tree/main/chapter04)
 - **Chapter 05** [재귀 알고리즘](https://github.com/iams0m/CodingTest/tree/main/chapter05)
+- **Chapter 06** [정렬 알고리즘](https://github.com/iams0m/CodingTest/tree/main/chapter06)
 ### Programmers 코딩 테스트 연습
